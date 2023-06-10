@@ -8,6 +8,7 @@ class BasePage():
     def __init__(self, driver):
         self.driver = driver
         self.url = Urls.BASE_URL
+        
 
     def click_when_element_is_clickable(self, locator):
         wait = WebDriverWait(self.driver, 20)
